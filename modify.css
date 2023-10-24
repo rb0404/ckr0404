@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #F08A4B;
+    text-align: center;
+}
+
+.title {
+    padding: 20px;
+    font-size: 40px;
+}
+
+nav {
+    padding: 5px;
+    border-radius: auto;
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+nav a {
+    color: gray;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 2fr 0.5fr;
+    grid-template-areas:
+        "aboutme aboutme"
+        "skill1 skill2"
+        "exp exp"
+        "footer footer";
+    gap: 10px;
+    height: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+
+}
+
+#aboutme {
+    grid-area: aboutme;
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+#skill1 {
+    grid-area: skill1;
+    background-color: aquamarine;
+    border-radius: 20px;
+}
+
+#skill2 {
+    grid-area: skill2;
+    background-color: azure;
+    border-radius: 20px;
+}
+
+#exp {
+    grid-area: exp;
+    background-color: beige;
+    border-radius: 20px;
+
+}
+
+#footer {
+    grid-area: footer;
+    background-color: blue;
+    padding: 20px;
+    border-radius: 20px;
+
+}
