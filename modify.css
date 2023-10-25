@@ -50,6 +50,39 @@ main {
 
 }
 
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.5fr;
+    grid-template-areas:
+        "head1 head1"
+        "pic info"
+        "slogan slogan";
+}
+
+.head1 {
+    grid-area: head1;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.pic {
+    grid-area: pic;
+    padding-left: 40px;
+}
+
+.info {
+    grid-area: info;
+    font-size: 30px;
+}
+
+.slogan {
+    grid-area: slogan;
+    font-size: 35px;
+    padding-left: 35%;
+    padding-top: 50px;
+}
+
 #aboutme {
     grid-area: aboutme;
     background-color: aqua;
@@ -72,7 +105,6 @@ main {
     grid-area: exp;
     background-color: beige;
     border-radius: 20px;
-
 }
 
 #footer {
