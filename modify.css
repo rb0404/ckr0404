@@ -36,7 +36,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr 2fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
     grid-template-areas:
         "aboutme aboutme"
         "interest skill"
@@ -54,7 +54,7 @@ main {
 .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 0.5fr;
+    grid-template-rows: 0.2fr 0.8fr 0.5fr;
     grid-template-areas:
         "head1 head1"
         "pic info"
@@ -111,6 +111,7 @@ img {
 
 font {
     font-size: 20px;
+    font-style: 微軟正黑體;
 }
 
 progress {
@@ -142,12 +143,73 @@ progress {
     grid-area: exp;
     background-color: beige;
     border-radius: 20px;
+    overflow: auto;
+}
+
+.exp1 {
+    columns: 2;
+}
+
+.exp2 {
+    columns: 2;
+}
+
+.exp3 {
+    columns: 2;
+}
+
+.exptitle {
+    margin-left: 20px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.video {
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    margin: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.talah {
+    width: 500px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 20px;
+    float: right;
+}
+
+.teach {
+    width: 500px;
+    height: 350px;
+    margin: 20px;
+    border-radius: 20px;
+    float: left;
 }
 
 #other {
     grid-area: other;
     background-color: brown;
     border-radius: 20px;
+}
+
+.othpho {
+    columns: 2;
+    margin: 20px;
+}
+
+.lol {
+    width: 90%;
 }
 
 #footer {
