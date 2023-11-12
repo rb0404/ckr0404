@@ -39,7 +39,7 @@ main {
     grid-template-rows: 1.5fr 1fr 2fr 0.5fr;
     grid-template-areas:
         "aboutme aboutme"
-        "skill1 skill2"
+        "interest skill"
         "exp exp"
         "footer footer";
     gap: 10px;
@@ -89,14 +89,50 @@ main {
     border-radius: 20px;
 }
 
-#skill1 {
-    grid-area: skill1;
+#interest {
+    grid-area: interest;
     background-color: aquamarine;
     border-radius: 20px;
 }
 
-#skill2 {
-    grid-area: skill2;
+.icon {
+    width: 60px;
+    padding-left: 20px;
+}
+
+.line {
+    line-height: 300%;
+}
+
+img {
+    float: left;
+}
+
+font {
+    font-size: 20px;
+}
+
+progress {
+    -webkit-appearance: none;
+    accent-color: red;
+    margin-left: 20px;
+    height: 30px;
+    border-radius: 40px;
+    width: 90%;
+}
+
+::-webkit-progress-value {
+    background-color: red;
+    border-radius: 40px;
+}
+
+::-webkit-progress-bar {
+    background-color: pink;
+    border-radius: 40px;
+}
+
+#skill {
+    grid-area: skill;
     background-color: azure;
     border-radius: 20px;
 }
