@@ -146,7 +146,7 @@ progress {
 
 #other {
     grid-area: other;
-    background-color: blanchedalmond;
+    background-color: brown;
     border-radius: 20px;
 }
 
@@ -155,5 +155,4 @@ progress {
     background-color: blue;
     padding: 20px;
     border-radius: 20px;
-
 }
