@@ -36,7 +36,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 0.5fr 0.5fr 1.5fr 1fr 0.1fr;
     grid-template-areas:
         "aboutme aboutme"
         "interest skill"
@@ -209,7 +209,11 @@ p {
 }
 
 .lol {
-    width: 90%;
+    width: 100%;
+}
+
+.othtext {
+    columns: 2;
 }
 
 #footer {
