@@ -3,26 +3,28 @@
 }
 
 header {
-    background-color: #F08A4B;
+    background-color: #3E332A;
     text-align: center;
 }
 
 .title {
     padding: 20px;
     font-size: 40px;
+    font-family: Noto Serif TC;
 }
 
 nav {
     padding: 5px;
     border-radius: auto;
     text-align: center;
-    color: aliceblue;
+    color: #f6f6f6;
     font-size: 20px;
 }
 
 nav a {
-    color: gray;
+    color: #c5c5c5;
     text-decoration: none;
+    padding: 10px 10px;
 }
 
 nav a:hover {
@@ -31,6 +33,11 @@ nav a:hover {
 
 body {
     margin: 0px;
+    background: linear-gradient(to bottom,
+            #E6A441 0%,
+            #E6A441 85%,
+            #8D553B 85%,
+            #8D553B 100%);
 }
 
 main {
@@ -65,6 +72,7 @@ main {
     grid-area: head1;
     padding: 20px;
     font-size: 40px;
+    font-family: Noto Serif TC;
 }
 
 .pic {
@@ -75,24 +83,25 @@ main {
 .info {
     grid-area: info;
     font-size: 30px;
+    font-family: Noto Sans TC;
 }
 
 .slogan {
     grid-area: slogan;
     font-size: 35px;
-    padding-left: 35%;
-    padding-top: 50px;
+    padding-left: 45%;
+    font-family: Noto Sans TC;
 }
 
 #aboutme {
     grid-area: aboutme;
-    background-color: aqua;
+    background-color: #F8E64E;
     border-radius: 20px;
 }
 
 #interest {
     grid-area: interest;
-    background-color: aquamarine;
+    background-color: #DD3735;
     border-radius: 20px;
 }
 
@@ -111,7 +120,7 @@ img {
 
 font {
     font-size: 20px;
-    font-style: 微軟正黑體;
+    font-family: Noto Sans TC;
 }
 
 progress {
@@ -124,24 +133,24 @@ progress {
 }
 
 ::-webkit-progress-value {
-    background-color: red;
+    background-color: #3E332A;
     border-radius: 40px;
 }
 
 ::-webkit-progress-bar {
-    background-color: pink;
+    background-color: #8D553B;
     border-radius: 40px;
 }
 
 #skill {
     grid-area: skill;
-    background-color: azure;
+    background-color: #DD3735;
     border-radius: 20px;
 }
 
 #exp {
     grid-area: exp;
-    background-color: beige;
+    background-color: #F8E64E;
     border-radius: 20px;
     overflow: auto;
 }
@@ -162,6 +171,7 @@ progress {
     margin-left: 20px;
     margin-top: 70px;
     text-align: center;
+    font-family: Noto Serif TC;
 }
 
 .video {
@@ -179,6 +189,7 @@ p {
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 80px;
+    font-family: Noto Sans TC;
 }
 
 .talah {
@@ -199,7 +210,7 @@ p {
 
 #other {
     grid-area: other;
-    background-color: brown;
+    background-color: #F8E64E;
     border-radius: 20px;
 }
 
@@ -209,7 +220,7 @@ p {
 }
 
 .lol {
-    width: 100%;
+    width: 93%;
 }
 
 .othtext {
