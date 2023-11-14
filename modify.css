@@ -43,14 +43,14 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 1.5fr 1fr 0.1fr;
+    grid-template-rows: 0.4fr 0.5fr 1.5fr 1fr 0.1fr;
     grid-template-areas:
         "aboutme aboutme"
         "interest skill"
         "exp exp"
         "other other"
         "footer footer";
-    gap: 10px;
+    gap: 20px;
     height: 100%;
     margin-left: 20%;
     margin-right: 20%;
@@ -152,7 +152,6 @@ progress {
     grid-area: exp;
     background-color: #F8E64E;
     border-radius: 20px;
-    overflow: auto;
 }
 
 .exp1 {
@@ -202,7 +201,7 @@ p {
 
 .teach {
     width: 500px;
-    height: 350px;
+    height: 300px;
     margin: 20px;
     border-radius: 20px;
     float: left;
@@ -220,11 +219,17 @@ p {
 }
 
 .lol {
-    width: 93%;
+    width: 500px;
+    height: 300px;
 }
 
 .othtext {
     columns: 2;
+}
+
+.VDtitle {
+    margin-top: 0px;
+    text-align: center;
 }
 
 #footer {
