@@ -5,6 +5,8 @@
 header {
     background-color: #3E332A;
     text-align: center;
+
+    cursor: url(img/pikachu.cur), auto;
 }
 
 .title {
@@ -38,12 +40,13 @@ body {
             #E6A441 85%,
             #8D553B 85%,
             #8D553B 100%);
+    cursor: url(img/pikachu.cur), auto;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.4fr 0.5fr 1.5fr 1fr 0.1fr;
+    grid-template-rows: 0.2fr 0.5fr 1.5fr 1fr 0.1fr;
     grid-template-areas:
         "aboutme aboutme"
         "interest skill"
@@ -60,12 +63,12 @@ main {
 
 .card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 0.2fr 0.8fr 0.5fr;
     grid-template-areas:
         "head1 head1"
         "pic info"
-        "slogan slogan";
+        "pic slogan";
 }
 
 .head1 {
@@ -77,32 +80,39 @@ main {
 
 .pic {
     grid-area: pic;
-    padding-left: 40px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+
+.me {
+    width: 70%;
+    border-radius: 40px;
 }
 
 .info {
     grid-area: info;
     font-size: 30px;
     font-family: Noto Sans TC;
+    font-style: bold;
 }
 
 .slogan {
     grid-area: slogan;
     font-size: 35px;
-    padding-left: 45%;
+    padding-right: 20px;
     font-family: Noto Sans TC;
 }
 
 #aboutme {
     grid-area: aboutme;
     background-color: #F8E64E;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 #interest {
     grid-area: interest;
     background-color: #DD3735;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 .icon {
@@ -145,13 +155,13 @@ progress {
 #skill {
     grid-area: skill;
     background-color: #DD3735;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 #exp {
     grid-area: exp;
     background-color: #F8E64E;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 .exp1 {
@@ -210,7 +220,7 @@ p {
 #other {
     grid-area: other;
     background-color: #F8E64E;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 .othpho {
@@ -234,7 +244,9 @@ p {
 
 #footer {
     grid-area: footer;
-    background-color: blue;
+    background-color: #8D553B;
     padding: 20px;
     border-radius: 20px;
+    position: relative;
+    left: 75%;
 }
